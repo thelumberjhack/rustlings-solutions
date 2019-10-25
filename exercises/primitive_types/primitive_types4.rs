@@ -2,36 +2,17 @@
 // Get a slice out of Array a where the ??? is so that the `if` statement
 // returns true. Scroll down for hints!!
 
-#[test]
 fn main() {
     let a = [1, 2, 3, 4, 5];
 
-    let nice_slice = ???
+    let nice_slice = &a[1..3];
 
-    assert_eq!([2, 3, 4], nice_slice)
+    if nice_slice == [2, 3, 4] {
+        println!("Nice slice!");
+    } else {
+        println!("Not quite what I was expecting... I see: {:?}", nice_slice);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
